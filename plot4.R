@@ -54,7 +54,7 @@ plot4<-function(){
     #add sub meter 3 data
     with(febData,points(ymd_hms(paste(Date,Time)),Sub_metering_3,type="l",col="blue"))
     #add legend
-    legend("topright",col=c("black","red","blue"),legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),lwd=1)
+    legend("topright",col=c("black","red","blue"),legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),lwd=1,bty="n")
     
     #make fourth plot
     with(febData,plot(ymd_hms(paste(Date,Time)),Global_reactive_power,type="l",xlab="datetime",ylab="Global_reactive_power"))
